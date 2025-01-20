@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.AssemblyInfo.cs
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.sourcelink.json
+C:\Users\Admin\source\repos\OOPS\bin\Debug\net8.0\OOPS Practice.exe
+C:\Users\Admin\source\repos\OOPS\bin\Debug\net8.0\OOPS Practice.deps.json
+C:\Users\Admin\source\repos\OOPS\bin\Debug\net8.0\OOPS Practice.runtimeconfig.json
+C:\Users\Admin\source\repos\OOPS\bin\Debug\net8.0\OOPS Practice.dll
+C:\Users\Admin\source\repos\OOPS\bin\Debug\net8.0\OOPS Practice.pdb
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.dll
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\refint\OOPS Practice.dll
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.pdb
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\OOPS Practice.genruntimeconfig.cache
+C:\Users\Admin\source\repos\OOPS\obj\Debug\net8.0\ref\OOPS Practice.dll
