@@ -1,19 +1,16 @@
-﻿abstract class Damage
+﻿abstract class Damage //Abstract class
 {
     public int Hand()
     {
-        int attack = 10;
-        return attack;
+        return 10;
     }
     public int Leg()
     {
-        int attack = 15;
-        return attack;
+        return 15;
     }
     public int Head()
     {
-        int attack = 5;
-        return attack;
+        return 5;
     }
 
     public string PlayerAkey1()
@@ -41,7 +38,7 @@
         return 9;
     }
 }
-class Attack : Damage
+class Attack : Damage //  inheritance
 {
     public int AttackPlayer(string player, string mode, int health)
     {
@@ -49,54 +46,54 @@ class Attack : Damage
         {
             if (mode == PlayerAkey1() || mode == PlayerAkey1().ToLower())
             {
-                health -= Hand();
+                health -= Hand(); // abstract class usage
             }
             else if (mode == PlayerAkey2() || mode == PlayerAkey2().ToLower())
             {
-                health -= Leg();
+                health -= Leg(); // abstract class usage
             }
             else if (mode == PlayerAkey3() || mode == PlayerAkey3().ToLower())
             {
-                health -= Head();
+                health -= Head(); // abstract class usage
             }
         }
         else if (player == "PlayerB")
         {
             if (mode.ToString().Contains(PlayerBkey1().ToString()))
             {
-                health -= Hand();
+                health -= Hand(); // abstract class usage
             }
             else if (mode.ToString().Contains(PlayerBkey2().ToString()))
             {
-                health -= Leg();
+                health -= Leg(); // abstract class usage
             }
             else if (mode.ToString().Contains(PlayerBkey3().ToString()))
             {
-                health -= Head();
+                health -= Head(); // abstract class usage
             }
         }
         return health;
 
     }
 }
-class Start : Damage //Encapsulation
+class Start : Damage // Inheritance
 {
 
     private string? PlayerA_Name;
 
     private string? PlayerB_Name;
 
-    public string? playerA_Name
+    public string? playerA_Name //Encapsulation
     {
         get => PlayerA_Name;
         set => PlayerA_Name = value;
     }
-    public string? playerB_Name
+    public string? playerB_Name //Encapsulation
     {
         get => PlayerB_Name;
         set => PlayerB_Name = value;
     }
-    private bool IsAllDigits(string input)
+    private bool IsAllDigits(string input) //validation to not allow numbers
     {
         return input.All(char.IsDigit);
     }
@@ -108,7 +105,7 @@ class Start : Damage //Encapsulation
 
         Console.WriteLine("Enter Player A's name: ");
         playerA_Name = Console.ReadLine();
-        while (string.IsNullOrEmpty(playerA_Name) || IsAllDigits(playerA_Name))
+        while (string.IsNullOrEmpty(playerA_Name) || IsAllDigits(playerA_Name)) // Allows input untill validation is right.
         {
             if (string.IsNullOrEmpty(playerA_Name))
             {
@@ -125,7 +122,7 @@ class Start : Damage //Encapsulation
 
         Console.WriteLine("Enter Player B's name: ");
         playerB_Name = Console.ReadLine();
-        while (string.IsNullOrEmpty(playerB_Name) || IsAllDigits(playerB_Name))
+        while (string.IsNullOrEmpty(playerB_Name) || IsAllDigits(playerB_Name)) // Allows input untill validation is right.
         {
             if (string.IsNullOrEmpty(playerB_Name))
             {
@@ -142,7 +139,7 @@ class Start : Damage //Encapsulation
         Console.WriteLine($"Fight Begins {PlayerA_Name} vs {PlayerB_Name}");
 
 
-        while (HealthA > 0 && HealthB > 0)
+        while (HealthA > 0 && HealthB > 0)// Attack Logic starts...
         {
             string AttackKey = Console.ReadKey(true).KeyChar.ToString();
             if (AttackKey == PlayerAkey1() || AttackKey == PlayerAkey1().ToLower() || AttackKey == PlayerAkey2() || AttackKey == PlayerAkey2().ToLower() || AttackKey == PlayerAkey3() || AttackKey == PlayerAkey3().ToLower())
@@ -162,7 +159,7 @@ class Start : Damage //Encapsulation
                 Console.WriteLine($"{playerB_Name} attacked {playerA_Name}. Remaining Health for {playerA_Name}: " + value);
             }
         }
-        Console.Clear();
+        Console.Clear(); // Battle result...
         Console.ForegroundColor = ConsoleColor.Black;
         Console.BackgroundColor = ConsoleColor.Green;
         if (HealthA < 0)
@@ -174,7 +171,7 @@ class Start : Damage //Encapsulation
             Console.WriteLine($"{playerA_Name} won the battle.");
         }
 
-        string result = "";
+        string result = ""; //Closing teh console...
         while (result != "close")
         {
             Console.WriteLine("Type 'close' to exit:");
@@ -194,7 +191,7 @@ class Game
         string StartBattle = Console.ReadLine();
         if (StartBattle.Contains("Start") || StartBattle.Contains("start"))
         {
-            Start start = new Start();
+            Start start = new Start();// Starting the battle...
             start.PlayerName();
         }
         else
