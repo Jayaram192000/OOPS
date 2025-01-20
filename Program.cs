@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Linq;
-abstract class Damage
+﻿abstract class Damage
 {
     public int Hand()
     {
@@ -81,7 +79,7 @@ class Attack : Damage
 
     }
 }
-class Start:Damage //Encapsulation
+class Start : Damage //Encapsulation
 {
 
     private string? PlayerA_Name;
@@ -175,7 +173,7 @@ class Start:Damage //Encapsulation
         {
             Console.WriteLine($"{playerA_Name} won the battle.");
         }
-       
+
         string result = "";
         while (result != "close")
         {
@@ -189,9 +187,10 @@ class Game
 {
     static void Main()
     {
+        Damage d = new Start();
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Welcome to the OOPS Battle war...");
-        Console.WriteLine("Player A and Player B wants to enter their names and battle will begins start. The attack can be done by Hand, leg, Head. Player A keys are Q,W,E. Player B keys are 7,8,9. Type \"Start\" to begin the battle.");
+        Console.WriteLine($"\nPlayers A and B will enter their names, and the battle will begin. Attacks can be performed using Hand, Leg, or Head. Player A's keys are {d.PlayerAkey1()}, {d.PlayerAkey2()}, and {d.PlayerAkey3()}, while Player B's keys are {d.PlayerBkey1()}, {d.PlayerBkey2()}, and {d.PlayerBkey3()}.\n \nType \"Start\" to begin the battle.");
         string StartBattle = Console.ReadLine();
         if (StartBattle.Contains("Start") || StartBattle.Contains("start"))
         {
