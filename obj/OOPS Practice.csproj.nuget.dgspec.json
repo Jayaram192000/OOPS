@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\OOPS\\OOPS Practice.csproj": {}
+    "D:\\Jayaram\\Personal\\Practice Project\\OOPS\\OOPS Practice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\OOPS\\OOPS Practice.csproj": {
+    "D:\\Jayaram\\Personal\\Practice Project\\OOPS\\OOPS Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\OOPS\\OOPS Practice.csproj",
+        "projectUniqueName": "D:\\Jayaram\\Personal\\Practice Project\\OOPS\\OOPS Practice.csproj",
         "projectName": "OOPS Practice",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\OOPS\\OOPS Practice.csproj",
+        "projectPath": "D:\\Jayaram\\Personal\\Practice Project\\OOPS\\OOPS Practice.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\OOPS\\obj\\",
+        "outputPath": "D:\\Jayaram\\Personal\\Practice Project\\OOPS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
